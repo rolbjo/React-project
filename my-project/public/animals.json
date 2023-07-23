@@ -1,0 +1,114 @@
+{
+  "animals": [
+    {
+      "name": "Tiger",
+      "species": "Panthera tigris",
+      "category": "Mammals",
+      "lifeExpectancy": "10-15 years",
+      "weight": "100-300 kg",
+      "age": "8-10 years",
+      "diet": "Carnivore",
+      "careDifficulty": "Moderate",
+      "image": "/tiger-164905_1280.jpg"
+    },
+    {
+      "name": "Eagle",
+      "species": "Aquila chrysaetos",
+      "category": "Birds",
+      "lifeExpectancy": "20-30 years",
+      "weight": "4-6 kg",
+      "age": "3-5 years",
+      "diet": "Carnivore",
+      "careDifficulty": "Easy",
+      "image": "/black-vulture-2750170_1280.jpg"
+    },
+    {
+      "name": "Dolphin",
+      "species": "Delphinidae",
+      "category": "Mammals",
+      "lifeExpectancy": "20-50 years",
+      "weight": "150-500 kg",
+      "age": "10-15 years",
+      "diet": "Carnivore",
+      "careDifficulty": "Moderate",
+      "image": "/sea-4002951_1280.jpg"
+    },
+    {
+      "name": "Crocodile",
+      "species": "Crocodylidae",
+      "category": "Reptiles",
+      "lifeExpectancy": "70-100 years",
+      "weight": "200-1000 kg",
+      "age": "20-30 years",
+      "diet": "Carnivore",
+      "careDifficulty": "Difficult",
+      "image": "/crocodile-4918820_1280.jpg"
+    },
+    {
+      "name": "Elephant",
+      "species": "Loxodonta africana",
+      "category": "Mammals",
+      "lifeExpectancy": "60-70 years",
+      "weight": "4000-7000 kg",
+      "age": "10-20 years",
+      "diet": "Herbivore",
+      "careDifficulty": "Moderate",
+      "image": "/elephant-111695_1280.jpg"
+    },
+    {
+      "name": "Lion",
+      "species": "Panthera leo",
+      "category": "Mammals",
+      "lifeExpectancy": "10-14 years",
+      "weight": "150-250 kg",
+      "age": "7-10 years",
+      "diet": "Carnivore",
+      "careDifficulty": "Moderate",
+      "image": "/lion-565820_1280.jpg"
+    },
+    {
+      "name": "Giraffe",
+      "species": "Giraffa camelopardalis",
+      "category": "Mammals",
+      "lifeExpectancy": "20-25 years",
+      "weight": "800-1500 kg",
+      "age": "5-10 years",
+      "diet": "Herbivore",
+      "careDifficulty": "Easy",
+      "image": "/giraffe-4312090_1280.jpg"
+    },
+    {
+      "name": "Penguin",
+      "species": "Spheniscidae",
+      "category": "Birds",
+      "lifeExpectancy": "15-20 years",
+      "weight": "2-5 kg",
+      "age": "2-3 years",
+      "diet": "Carnivore",
+      "careDifficulty": "Easy",
+      "image": "/animal-1867125_1280.jpg"
+    },
+    {
+      "name": "Gorilla",
+      "species": "Gorilla gorilla",
+      "category": "Mammals",
+      "lifeExpectancy": "35-50 years",
+      "weight": "135-200 kg",
+      "age": "10-15 years",
+      "diet": "Herbivore",
+      "careDifficulty": "Moderate",
+      "image": "/gorilla-2586193_1280.jpg"
+    },
+    {
+      "name": "Kangaroo",
+      "species": "Macropus",
+      "category": "Mammals",
+      "lifeExpectancy": "6-8 years",
+      "weight": "20-90 kg",
+      "age": "2-4 years",
+      "diet": "Herbivore",
+      "careDifficulty": "Easy",
+      "image": "/joey-4119815_1280.jpg"
+    }
+  ]
+}

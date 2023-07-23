@@ -1,0 +1,10 @@
+.AnimalDetails-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.AnimalDetails-img {
+  width: 50%;
+  margin-bottom: 10px;
+}
