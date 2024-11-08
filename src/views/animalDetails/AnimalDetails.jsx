@@ -1,9 +1,8 @@
-import { useContext, useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useParams, useLocation } from 'react-router-dom'
-import '../AnimalDetails.css'
-import FormikComponent from '../FormikComponent'
-import SomeContext from '../SomeContext'
-import StyledButton from '../button'
+import './AnimalDetails.css'
+import FormikComponent from '../../components/FormikComponent'
+import BigVines from '/vines.png'
 
 function AnimalDetails() {
   const { name } = useParams()
@@ -11,9 +10,6 @@ function AnimalDetails() {
   const location = useLocation()
   const searchParams = new URLSearchParams(location.search)
   const userName = searchParams.get('name')
-  const { darkMode, setDarkMode } = useContext(SomeContext)
-
-  console.log(darkMode)
 
   useEffect(() => {
     fetch(`/animals.json`)
@@ -25,17 +21,15 @@ function AnimalDetails() {
       .catch((error) => console.error(error))
   }, [name])
 
-  const handleDarkModeToggle = () => {
-    setDarkMode(!darkMode)
-  }
-
   return (
     <>
+      <div>
+        <img className='AnimalDetails-vines' src={BigVines} alt='vines' />
+        <img className='AnimalDetails-vines2' src={BigVines} alt='vines' />
+      </div>
+
       {animal ? (
         <>
-          <StyledButton onClick={handleDarkModeToggle}>
-            {darkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
-          </StyledButton>
           <div className='AnimalDetails-wrapper'>
             <h2>{animal.name}</h2>
             <img

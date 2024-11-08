@@ -1,0 +1,29 @@
+.AnimalDetails-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.AnimalDetails-img {
+  width: 50%;
+  margin-bottom: 10px;
+}
+.navWrapper {
+  @media (max-width: 500px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.AnimalDetails-vines {
+  position: absolute;
+  width: 20%;
+  z-index: 1;
+  left: 0;
+}
+.AnimalDetails-vines2 {
+  position: absolute;
+  width: 20%;
+  z-index: 1;
+  right: 0;
+  transform: scaleX(-1);
+}

@@ -1,60 +1,40 @@
-import { Navbar, Nav } from 'react-bootstrap'
-
 import { useEffect, useState } from 'react'
-import AnimalDetails from './views/AnimalDetails'
+import MyNavbar from './components/Navbar'
+import Footer from './components/Footer'
+import AnimalDetails from './views/animalDetails/AnimalDetails'
 import About from './views/About'
-import Home from './views/Home'
-import SomeContext from './SomeContext'
+import Home from './views/home/Home'
+import { SomeProvider } from './SomeContext'
+import './App.css'
+import Loading from './components/loading'
 
-import {
-  createHashRouter,
-  Link,
-  Outlet,
-  RouterProvider,
-} from 'react-router-dom'
+import { createHashRouter, Outlet, RouterProvider } from 'react-router-dom'
 
 function Root() {
-  const [darkMode, setDarkMode] = useState(false)
+  const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {
-    document.body.style.backgroundColor = darkMode ? 'black' : 'white'
+    setIsLoading(true)
+    const timer = setTimeout(() => {
+      setIsLoading(false)
+    }, 1000)
+    return () => clearTimeout(timer)
+  }, [])
 
-    document.body.style.color = darkMode ? 'white' : 'black'
-  }, [darkMode])
   return (
-    <>
-      <SomeContext.Provider value={{ darkMode, setDarkMode }}>
-        <Navbar bg='light' expand='lg'>
-          <Navbar.Brand as={Link} to='/'>
-            Wild Adoption
-          </Navbar.Brand>
-          <Navbar.Toggle aria-controls='basic-navbar-nav' />
-          <Navbar.Collapse id='basic-navbar-nav'>
-            <Nav className='mr-auto'>
-              <Nav.Link as={Link} to='/'>
-                Home
-              </Nav.Link>
-              <Nav.Link as={Link} to='/about'>
-                About
-              </Nav.Link>
-            </Nav>
-          </Navbar.Collapse>
-        </Navbar>
-        <Outlet />
-        <footer
-          className='footer bg-dark text-light'
-          style={{ marginTop: '20px' }}
+    <SomeProvider>
+      <div className='wrapper'>
+        <MyNavbar />
+        <div
+          className={`content ${isLoading ? 'hidden' : 'visible'}`}
+          style={{ padding: '0 50px', overflow: 'hidden' }}
         >
-          <div className='container'>
-            <div className='row'>
-              <div className='col-12 text-center'>
-                <p>&copy; 2023 Wild Adoption. All rights reserved.</p>
-              </div>
-            </div>
-          </div>
-        </footer>
-      </SomeContext.Provider>
-    </>
+          <Outlet />
+        </div>
+        {isLoading && <Loading />}
+        <Footer />
+      </div>
+    </SomeProvider>
   )
 }
 

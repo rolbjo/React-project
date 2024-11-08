@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [
     VitePWA({
       manifest: {
-        background_color: 'grey',
+        background_color: 'red',
         display: 'standalone',
         icons: [
           {
@@ -37,16 +37,23 @@ export default defineConfig({
         name: 'Wild adoption',
         short_name: 'Wild adoption',
         start_url: '.',
-        theme_color: 'grey',
+        theme_color: 'green',
       },
       registerType: 'autoUpdate',
       workbox: {
+        maximumFileSizeToCacheInBytes: 4 * 1024 * 1024,
         globPatterns: ['assets/**', 'index.html', 'manifest.webmanifest'],
+      },
+      devOptions: {
+        enabled: false,
       },
     }),
     react(),
   ],
   server: {
     host: '0.0.0.0',
+  },
+  build: {
+    sourcemap: true,
   },
 })
