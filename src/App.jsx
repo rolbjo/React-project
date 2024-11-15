@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react'
 import MyNavbar from './components/Navbar'
 import Footer from './components/Footer'
 import AnimalDetails from './views/animalDetails/AnimalDetails'
@@ -7,19 +6,12 @@ import Home from './views/home/Home'
 import { SomeProvider } from './SomeContext'
 import './App.css'
 import Loading from './components/loading'
+import useLoading from './hooks/useLoading'
 
 import { createHashRouter, Outlet, RouterProvider } from 'react-router-dom'
 
 function Root() {
-  const [isLoading, setIsLoading] = useState(true)
-
-  useEffect(() => {
-    setIsLoading(true)
-    const timer = setTimeout(() => {
-      setIsLoading(false)
-    }, 1000)
-    return () => clearTimeout(timer)
-  }, [])
+  const isLoading = useLoading()
 
   return (
     <SomeProvider>

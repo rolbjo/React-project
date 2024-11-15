@@ -12,7 +12,7 @@ function AnimalDetails() {
   const userName = searchParams.get('name')
 
   useEffect(() => {
-    fetch(`/animals.json`)
+    fetch(`animals.json`)
       .then((response) => response.json())
       .then((data) => {
         const foundAnimal = data.animals.find((animal) => animal.name === name)

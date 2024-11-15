@@ -3,6 +3,7 @@ import { VitePWA } from 'vite-plugin-pwa'
 import react from '@vitejs/plugin-react'
 
 export default defineConfig({
+  base: process.env.NODE_ENV === 'production' ? '/React-project/' : '/',
   plugins: [
     VitePWA({
       manifest: {

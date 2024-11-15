@@ -9,7 +9,7 @@
       "age": "8-10 years",
       "diet": "Carnivore",
       "careDifficulty": "Moderate",
-      "image": "/tiger-164905_1280.jpg"
+      "image": "tiger-164905_1280.jpg"
     },
     {
       "name": "Eagle",
@@ -20,7 +20,7 @@
       "age": "3-5 years",
       "diet": "Carnivore",
       "careDifficulty": "Easy",
-      "image": "/black-vulture-2750170_1280.jpg"
+      "image": "black-vulture-2750170_1280.jpg"
     },
     {
       "name": "Dolphin",
@@ -31,7 +31,7 @@
       "age": "10-15 years",
       "diet": "Carnivore",
       "careDifficulty": "Moderate",
-      "image": "/sea-4002951_1280.jpg"
+      "image": "sea-4002951_1280.jpg"
     },
     {
       "name": "Crocodile",
@@ -42,7 +42,7 @@
       "age": "20-30 years",
       "diet": "Carnivore",
       "careDifficulty": "Difficult",
-      "image": "/crocodile-4918820_1280.jpg"
+      "image": "crocodile-4918820_1280.jpg"
     },
     {
       "name": "Elephant",
@@ -53,7 +53,7 @@
       "age": "10-20 years",
       "diet": "Herbivore",
       "careDifficulty": "Moderate",
-      "image": "/elephant-111695_1280.jpg"
+      "image": "elephant-111695_1280.jpg"
     },
     {
       "name": "Lion",
@@ -64,7 +64,7 @@
       "age": "7-10 years",
       "diet": "Carnivore",
       "careDifficulty": "Moderate",
-      "image": "/lion-565820_1280.jpg"
+      "image": "lion-565820_1280.jpg"
     },
     {
       "name": "Giraffe",
@@ -75,7 +75,7 @@
       "age": "5-10 years",
       "diet": "Herbivore",
       "careDifficulty": "Easy",
-      "image": "/giraffe-4312090_1280.jpg"
+      "image": "giraffe-4312090_1280.jpg"
     },
     {
       "name": "Penguin",
@@ -86,7 +86,7 @@
       "age": "2-3 years",
       "diet": "Carnivore",
       "careDifficulty": "Easy",
-      "image": "/animal-1867125_1280.jpg"
+      "image": "animal-1867125_1280.jpg"
     },
     {
       "name": "Gorilla",
@@ -97,7 +97,7 @@
       "age": "10-15 years",
       "diet": "Herbivore",
       "careDifficulty": "Moderate",
-      "image": "/gorilla-2586193_1280.jpg"
+      "image": "gorilla-2586193_1280.jpg"
     },
     {
       "name": "Kangaroo",
@@ -108,7 +108,7 @@
       "age": "2-4 years",
       "diet": "Herbivore",
       "careDifficulty": "Easy",
-      "image": "/joey-4119815_1280.jpg"
+      "image": "joey-4119815_1280.jpg"
     }
   ]
 }

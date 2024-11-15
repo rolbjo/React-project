@@ -16,7 +16,7 @@ const Loading = () => {
       <Player
         autoplay
         loop
-        src='/loader.json'
+        src='loader.json'
         style={{ height: '300px', width: '300px' }}
       />
     </LoadingContainer>
